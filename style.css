@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #EFF6FF;
     font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -10,6 +10,28 @@ main {
     height: 100vh;
     min-height: 100vh;
     box-shadow: 10px 10px 15px 10px lightgrey;
+} */
+
+body {
+  background-color: #eff6ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  height: 100vh; /* added - to place main container to center */
+  margin: 0; /* added - always by default */
+  padding: 0; /* added - always by default */
+  box-sizing: border-box; /* added - always by default */
+  display: flex; /* added */
+  justify-content: center; /* added */
+  align-items: center; /* added */
+}
+
+main {
+  width: 90%; /* added to make main container shape */
+  height: 90%; /* added to make main container shape */
+  display: flex;
+  /* margin: 70px; */
+  /* height: 100vh; */
+  /* min-height: 100vh; */
+  box-shadow: 10px 10px 15px 10px lightgrey;
 }
 
 
@@ -194,4 +216,23 @@ ul {
 }
 li {
     list-style: none;
+}
+
+/* popup style */
+.popup {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background: white;
+  padding: 2px;
+  border: 1px lightgray solid;
+  border-radius: 4px;
+}
+
+.info {
+  position: relative;
+}
+
+.info:hover .popup {
+  display: block;
 }
